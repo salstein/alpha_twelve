@@ -1,0 +1,131 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Apple iPhone 16",
+             "extra": "128GB",
+             "color": "Teal",
+             "price": 700.00,
+
+            "descriptions": [
+                "This pre-owned product is not Apple certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+                "There will be no visible cosmetic imperfections when held at an arm’s length.",
+                "This product will have a battery which exceeds 80% capacity relative to new.",
+                "Accessories will not be original, but will be compatible and fully functional. Product may come in generic Box.",
+                "This product is eligible for a replacement or refund within 90 days of receipt if you are not satisfied."
+            ],
+            "imageUrl": "assets/images/iphone.png"
+        },
+        {
+            "id": 2,
+            "name": "M4 Macbook Air 13”",
+            "extra": "256GB",
+            "color": "Sky blue",
+            "price": 1000.00,
+            "descriptions": [
+                "This pre-owned product is not Samsung certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+                "There will be no visible cosmetic imperfections when held at an arm’s length.",
+                "This product will have a battery which exceeds 80% capacity relative to new.",
+                "Accessories will not be original, but will be compatible and fully functional. Product may come in generic Box.",
+                "This product is eligible for a replacement or refund within 90 days of receipt if you are not satisfied."
+            ],
+            "imageUrl": "assets/images/macbook.png"
+        },
+        {
+            "id": 3,
+            "name": "Google Pixel 9A",
+            "extra": "128GB",
+            "color": "Iris",
+            "price": 499.00,
+            "descriptions": [
+                "This pre-owned product is not Google certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+                "There will be no visible cosmetic imperfections when held at an arm’s length.",
+                "This product will have a battery which exceeds 80% capacity relative to new.",
+                "Accessories will not be original, but will be compatible and fully functional. Product may come in generic Box.",
+                "This product is eligible for a replacement or refund within 90 days of receipt if you are not satisfied."
+            ],
+            "imageUrl": "assets/images/google-pixel.png"
+        },
+        {
+            "id": 4,
+            "name": "Apple Airpods 4",
+            "extra": "Active Noise Cancellation",
+            "color": "Teal",
+            "price": 129.00,
+            "descriptions": [
+                "This pre-owned product is not Samsung certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+                "There will be no visible cosmetic imperfections when held at an arm’s length.",
+                "This product will have a battery which exceeds 80% capacity relative to new.",
+                "Accessories will not be original, but will be compatible and fully functional. Product may come in generic Box.",
+                "This product is eligible for a replacement or refund within 90 days of receipt if you are not satisfied."
+            ],
+            "imageUrl": "assets/images/ipod.png"
+        },
+        {
+            "id": 5,
+            "name": "CPU Cooling Fan",
+            "extra": "For Intel i7",
+            "color": "Black",
+            "price": 799.00,
+            "descriptions": [
+                "This pre-owned product is not Samsung certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+                "There will be no visible cosmetic imperfections when held at an arm’s length.",
+                "This product will have a battery which exceeds 80% capacity relative to new.",
+                "Accessories will not be original, but will be compatible and fully functional. Product may come in generic Box.",
+                "This product is eligible for a replacement or refund within 90 days of receipt if you are not satisfied."
+            ],
+            "imageUrl": "assets/images/cpu-cooler.jpeg"
+        },
+
+        {
+            "id": 6,
+            "name": "CPU Cooler GEForce RTX 4090",
+            "extra": "For Intel i9",
+            "color": "Black",
+            "price": 899.00,
+            "descriptions": [
+                "This pre-owned product is not Samsung certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+                "There will be no visible cosmetic imperfections when held at an arm’s length.",
+                "This product will have a battery which exceeds 80% capacity relative to new.",
+                "Accessories will not be original, but will be compatible and fully functional. Product may come in generic Box.",
+                "This product is eligible for a replacement or refund within 90 days of receipt if you are not satisfied."
+            ],
+            "imageUrl": "assets/images/cpu-fan.jpeg"
+        },
+
+        {
+            "id": 7,
+            "name": "Joystick Controller EX16",
+            "extra": "Wireless",
+            "color": "Black",
+            "price": 799.00,
+            "descriptions": [
+                "This pre-owned product is not Samsung certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+                "There will be no visible cosmetic imperfections when held at an arm’s length.",
+                "This product will have a battery which exceeds 80% capacity relative to new.",
+                "Accessories will not be original, but will be compatible and fully functional. Product may come in generic Box.",
+                "This product is eligible for a replacement or refund within 90 days of receipt if you are not satisfied."
+            ],
+            "imageUrl": "assets/images/joy-stick.jpeg"
+        },
+        {
+            "id": 8,
+            "name": "Turtle Computer Mouse ",
+            "extra": "Wired",
+            "color": "Green",
+            "price": 699.00,
+            "descriptions": [
+                "This pre-owned product is not Samsung certified, but has been professionally inspected, tested and cleaned by Amazon-qualified suppliers.",
+                "There will be no visible cosmetic imperfections when held at an arm’s length.",
+                "This product will have a battery which exceeds 80% capacity relative to new.",
+                "Accessories will not be original, but will be compatible and fully functional. Product may come in generic Box.",
+                "This product is eligible for a replacement or refund within 90 days of receipt if you are not satisfied."
+            ],
+            "imageUrl": "assets/images/turtle-mouse.jpeg"
+        }
+
+
+
+    ]
+}
+
