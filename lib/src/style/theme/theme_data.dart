@@ -71,7 +71,7 @@ abstract class AppTheme {
         foregroundColor: AlphaColors.whiteColor,
         backgroundColor: AlphaColors.primaryBlue,
         elevation: 1,
-        padding: EdgeInsets.symmetric(vertical: 14.h, horizontal: 24.w),
+       
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
         textStyle: TextStyle(
