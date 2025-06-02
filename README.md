@@ -1,4 +1,4 @@
-# AlphaTwelve Flutter Developer Task
+# MiniMart  ---  AlphaTwelve Flutter Developer Task
 
 ## 📦 Project Structure Overview
 
