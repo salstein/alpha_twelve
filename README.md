@@ -1,5 +1,11 @@
 # MiniMart  ---  AlphaTwelve Flutter Developer Task
 
+
+## Framework
+
+This project is built using **Flutter**, an open-source UI software development toolkit created by Google. Flutter allows for the development of high-performance, natively compiled applications for mobile, web, and desktop from a single codebase. It offers a fast development cycle with hot reload, expressive and flexible UI components, and a rich ecosystem of packages.
+
+
 ## 📦 Project Structure Overview
 
 The app follows a **feature-first modular architecture**, keeping features independent and scalable. Here's a quick look:
