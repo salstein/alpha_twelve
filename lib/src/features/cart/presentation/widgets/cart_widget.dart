@@ -46,6 +46,7 @@ class CartItemWidget extends ConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(cartItem.name,
+                maxLines: 1,
                     style: context.labelLarge?.copyWith(
                       color: AlphaColors.greyShade.shade700,
                     )),

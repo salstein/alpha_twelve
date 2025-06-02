@@ -1,4 +1,9 @@
+import 'package:alpha_twelve/src/shared/utils/utils.dart';
+import 'package:alpha_twelve/src/style/colors/alpha_colors.dart';
+import 'package:alpha_twelve/src/style/theme/typography/typography_on_ctx.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class TopSnackbar extends StatelessWidget {
   final String message;
@@ -14,45 +19,40 @@ class TopSnackbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        padding: EdgeInsets.symmetric(horizontal: AlphaConstants.mediumSpace.w),
         child: Material(
           elevation: 6,
-          borderRadius: BorderRadius.circular(12),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              color: Colors.white,
-            ),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-            child: Row(
-              children: [
-                Container(
-                  width: 4,
-                  height: 36,
+          borderRadius: BorderRadius.circular(AlphaConstants.smallSpace.r),
+          color: AlphaColors.successColor,
+          child: Row(
+            children: [
+              (AlphaConstants.smallSpace / 2).w.horizontalSpace,
+              Expanded(
+                child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(4),
+                    borderRadius:
+                        BorderRadius.circular(AlphaConstants.smallSpace.r),
+                    color: Colors.white,
+                  ),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: AlphaConstants.mediumSpace.w,
+                      vertical: AlphaConstants.mediumSpace.h),
+                  child: Row(
+                    children: [
+                      const Icon(HugeIcons.strokeRoundedCheckmarkCircle01,
+                          color: AlphaColors.successColor),
+                      AlphaConstants.smallSpace.w.horizontalSpace,
+                      Expanded(child: Text(message, style: context.bodySmall)),
+                      GestureDetector(
+                        onTap: onClose,
+                        child: const Icon(Icons.close,
+                            color: AlphaColors.blackColor),
+                      ),
+                    ],
                   ),
                 ),
-                const SizedBox(width: 12),
-                const Icon(Icons.check_circle, color: Colors.green),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Text(
-                    message,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 14,
-                      color: Color(0xFF2C2C2C),
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: onClose,
-                  child: const Icon(Icons.close, color: Colors.grey),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
