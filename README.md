@@ -115,3 +115,22 @@ This codebase is designed to be scalable and clean:
 * Reusable styling and assets
 * Responsive layout practices
 
+## Screenshots
+
+### Home
+![Home](screenshots/home.png)
+
+### Product Page
+![Product Page](screenshots/product-page.png)
+
+### Cart (Empty)
+![Empty Cart](screenshots/empty-cart.png)
+
+### Cart with Items
+![Cart with Items](screenshots/cart-with-items.png)
+
+### Cart Count Badge
+![Cart Count](screenshots/cart-count.png)
+
+### Popup Display
+![Showing Popup](screenshots/showing-popup.png)
