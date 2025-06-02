@@ -9,7 +9,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../shared/shared.dart';
 import '../widgets/cart_widget.dart';
 
-
 class CartScreen extends ConsumerStatefulWidget {
   const CartScreen({super.key});
 
@@ -18,15 +17,18 @@ class CartScreen extends ConsumerStatefulWidget {
 }
 
 class _CartScreenState extends ConsumerState<CartScreen> {
- 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       persistentFooterButtons: [
-        ElevatedButton(
-          onPressed: () {},
-          child: const Text('Checkout'),
-        ),
+        if (ref.watch(cartViewModelProvider).cart.isNotEmpty) ...[
+          Center(
+            child: ElevatedButton(
+              onPressed: () {},
+              child: const Text('Checkout'),
+            ),
+          ),
+        ]
       ],
       body: SafeArea(
         child: Column(
@@ -39,9 +41,10 @@ class _CartScreenState extends ConsumerState<CartScreen> {
                 context.pop();
               },
             ),
-            if (ref.watch(cartViewModelProvider).cart.isEmpty)
+            if (ref.watch(cartViewModelProvider).cart.isEmpty) ...[
+              AlphaConstants.bigSpaceX.h.verticalSpace,
               const _EmptyCart()
-            else
+            ] else
               const SizedBox.shrink(),
             if (ref.watch(cartViewModelProvider).cart.isNotEmpty) ...[
               AlphaConstants.mediumSpace.h.verticalSpace,
@@ -56,11 +59,6 @@ class _CartScreenState extends ConsumerState<CartScreen> {
     );
   }
 }
-
-
-
-
-
 
 class _OrderInfo extends ConsumerWidget {
   const _OrderInfo();

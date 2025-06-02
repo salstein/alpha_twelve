@@ -51,13 +51,15 @@ class _ProductDetailsScreenState extends ConsumerState<ProductDetailsScreen> {
     final product = ref.watch(productDetailsViewModelProvider).product;
     return Scaffold(
       persistentFooterButtons: [
-        ElevatedButton(
-            onPressed: () {
-              ref
-                  .read(cartViewModelProvider.notifier)
-                  .addToCart(product.toCartItem());
-            },
-            child: const Text('Add to Cart')),
+        Center(
+          child: ElevatedButton(
+              onPressed: () {
+                ref
+                    .read(cartViewModelProvider.notifier)
+                    .addToCart(product.toCartItem());
+              },
+              child: const Text('Add to Cart')),
+        ),
       ],
       body: SafeArea(
         child: Hero(
