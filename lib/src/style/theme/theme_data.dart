@@ -1,14 +1,12 @@
-import 'package:alpha_twelve/src/style/colors/alpha_colors.dart';
+import 'package:alpha_twelve/src/style/theme/color%20scheme/alpha_colors.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'typography/typography_theme.dart';
 
-
 abstract class AppTheme {
   static ThemeData lightTheme = ThemeData(
-    
     brightness: Brightness.light,
     colorScheme: const ColorScheme(
       brightness: Brightness.light,
@@ -28,7 +26,6 @@ abstract class AppTheme {
 
     // AppBar styling
     appBarTheme: const AppBarTheme(
-     
       backgroundColor: AlphaColors.whiteColor,
       elevation: 0,
       surfaceTintColor: Colors.transparent,
@@ -71,9 +68,7 @@ abstract class AppTheme {
         foregroundColor: AlphaColors.whiteColor,
         backgroundColor: AlphaColors.primaryBlue,
         elevation: 1,
-       
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
         textStyle: TextStyle(
           fontSize: 14.sp,
           fontWeight: FontWeight.w600,
@@ -86,12 +81,16 @@ abstract class AppTheme {
     // Outlined Button Theme
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
-        foregroundColor: AlphaColors.whiteColor,
+        maximumSize: Size(342.w, 48.h),
+        minimumSize: Size(342.w, 48.h),
+        splashFactory: NoSplash.splashFactory,
         side: const BorderSide(color: AlphaColors.primaryBlue, width: 2),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        textStyle: const TextStyle(
+        textStyle: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w600,
+          fontFamily: AlphaTypography.ibmPlexSans(),
+          color: AlphaColors.primaryBlue,
         ),
       ),
     ),

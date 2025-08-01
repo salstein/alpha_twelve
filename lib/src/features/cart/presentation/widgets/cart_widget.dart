@@ -1,7 +1,7 @@
 import 'package:alpha_twelve/src/features/cart/application/cart_view_model.dart';
 import 'package:alpha_twelve/src/features/cart/models/cart_object_dto.dart';
 import 'package:alpha_twelve/src/shared/utils/constants.dart';
-import 'package:alpha_twelve/src/style/colors/alpha_colors.dart';
+import 'package:alpha_twelve/src/style/theme/color%20scheme/alpha_colors.dart';
 import 'package:alpha_twelve/src/style/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

@@ -1,4 +1,4 @@
-import 'package:alpha_twelve/src/style/colors/alpha_colors.dart';
+import 'package:alpha_twelve/src/style/theme/color%20scheme/alpha_colors.dart';
 import 'package:alpha_twelve/src/style/theme/typography/typography.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

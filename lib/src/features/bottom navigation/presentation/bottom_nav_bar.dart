@@ -4,7 +4,7 @@ import 'package:alpha_twelve/src/features/favorites/presentation/screens/favorit
 import 'package:alpha_twelve/src/features/home/presentation/screens/home_screen.dart';
 import 'package:alpha_twelve/src/features/profile/presentation/screens/profile_screen.dart';
 import 'package:alpha_twelve/src/routing/routing.dart';
-import 'package:alpha_twelve/src/style/colors/alpha_colors.dart';
+import 'package:alpha_twelve/src/style/theme/color%20scheme/alpha_colors.dart';
 import 'package:alpha_twelve/src/style/theme/typography/typography.dart';
 import 'package:alpha_twelve/src/style/theme/typography/typography_on_ctx.dart';
 import 'package:flutter/material.dart';

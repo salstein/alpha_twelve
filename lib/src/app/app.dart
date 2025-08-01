@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 class App extends ConsumerStatefulWidget {
   const App({super.key});
 
@@ -86,11 +85,11 @@ class _MyAppState extends ConsumerState<App> {
               splitScreenMode: true,
               builder: (_, child) {
                 return MaterialApp.router(
-                    debugShowCheckedModeBanner: false,
-                    routerConfig: appRouter.mainRouter,
-                    title: const String.fromEnvironment('APP_TITLE'),
-                    theme: AppTheme.lightTheme,
-                    darkTheme: AppTheme.lightTheme);
+                  debugShowCheckedModeBanner: false,
+                  routerConfig: appRouter.mainRouter,
+                  title: const String.fromEnvironment('APP_TITLE'),
+                  theme: AppTheme.lightTheme,
+                );
               })),
     );
   }

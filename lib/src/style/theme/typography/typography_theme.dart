@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../colors/alpha_colors.dart';
+import '../color scheme/alpha_colors.dart';
 
 class AlphaTypography {
   static String ibmPlexSans() => GoogleFonts.ibmPlexSans().fontFamily!;

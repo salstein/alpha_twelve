@@ -1,6 +1,6 @@
 import 'package:alpha_twelve/src/features/cart/application/cart_view_model.dart';
 import 'package:alpha_twelve/src/routing/routing.dart';
-import 'package:alpha_twelve/src/style/colors/alpha_colors.dart';
+import 'package:alpha_twelve/src/style/theme/color%20scheme/alpha_colors.dart';
 import 'package:alpha_twelve/src/style/theme/typography/typography.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -148,7 +148,51 @@ class _EmptyCart extends StatelessWidget {
             },
             child: const Text('Go to Products'),
           ),
+          AlphaConstants.mediumSpace.h.verticalSpace,
+          OutlinedButtonWithSta(
+            enabled: true, // Replace with actual logic to enable/disable
+            onPressed: () {},
+            title: 'Continue Shopping',
+          )
         ],
+      ),
+    );
+  }
+}
+
+class OutlinedButtonWithSta extends StatelessWidget {
+  const OutlinedButtonWithSta(
+      {super.key, this.enabled = true, this.title, this.onPressed});
+  final bool enabled;
+  final String? title;
+  final VoidCallback? onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton(
+      onPressed: onPressed,
+      style: ButtonStyle(
+        side: WidgetStateProperty.all(
+          BorderSide(
+              color: enabled
+                  ? AlphaColors.primaryBlue
+                  : AlphaColors.greyShade.shade400,
+              width: 2),
+        ),
+        shape: WidgetStateProperty.all(
+          RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        ),
+      ), // Replace with actual onPressed logic
+      child: Text(
+        title ?? 'Add title',
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w600,
+          fontFamily: AlphaTypography.ibmPlexSans(),
+          color: enabled
+              ? AlphaColors.primaryBlue
+              : AlphaColors.greyShade.shade400,
+        ),
       ),
     );
   }

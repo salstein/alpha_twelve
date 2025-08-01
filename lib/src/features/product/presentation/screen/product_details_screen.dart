@@ -2,7 +2,7 @@ import 'package:alpha_twelve/src/features/cart/application/cart_view_model.dart'
 import 'package:alpha_twelve/src/features/product/application/product_details_viewmodel.dart';
 import 'package:alpha_twelve/src/features/product/models/product_response_dto.dart';
 import 'package:alpha_twelve/src/routing/routing.dart';
-import 'package:alpha_twelve/src/style/colors/alpha_colors.dart';
+import 'package:alpha_twelve/src/style/theme/color%20scheme/alpha_colors.dart';
 import 'package:alpha_twelve/src/style/theme/typography/typography.dart';
 
 import 'package:flutter/material.dart';
